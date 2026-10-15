@@ -1,16 +1,22 @@
 
+/* Basic Style */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: white;
-    color: black;
+    background: linear-gradient(135deg, #eef2ff, #fdf2f8, #e0f2fe);
+    color: #222;
     text-align: center;
 }
 
+/* Header */
 header {
-    background: #333;
+    background: linear-gradient(90deg, #4338ca, #7c3aed, #db2777);
     color: white;
     padding: 20px;
+}
+
+header h2 {
+    margin-top: 0;
 }
 
 nav {
@@ -21,72 +27,138 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fde68a;
 }
 
 button {
-    padding: 8px;
+    background: linear-gradient(90deg, #06b6d4, #6366f1);
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
 }
 
+/* Sections */
 section {
     padding: 40px 20px;
 }
 
 #home {
-    background: #e0e7ff;
-    padding: 70px 20px;
+    background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+    color: white;
+    padding: 80px 20px;
 }
 
-h1 {
-    font-size: 35px;
+#home h1 {
+    font-size: 40px;
 }
 
+#home p {
+    font-size: 18px;
+}
+
+/* Buttons */
 .btn {
     display: inline-block;
-    background: blue;
+    background: linear-gradient(90deg, #0891b2, #4f46e5);
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
     margin-top: 10px;
+    border-radius: 25px;
+}
+
+.btn:hover,
+button:hover {
+    opacity: 0.85;
+}
+
+/* About Section */
+#about {
+    background: linear-gradient(120deg, #ffffff, #ede9fe);
+}
+
+/* Skill Cards */
+#skills {
+    background: linear-gradient(135deg, #dbeafe, #f3e8ff);
 }
 
 .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
 }
 
 .card {
-    background: #f0f0f0;
-    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #e0e7ff);
+    padding: 25px;
     width: 200px;
-    border-radius: 8px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #00000015;
+    border-bottom: 4px solid #818cf8;
 }
 
+.card h3 {
+    color: #6d28d9;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* GitHub Section */
 #github {
-    background: #eeeeee;
+    background: linear-gradient(120deg, #cffafe, #dbeafe, #ede9fe);
 }
 
+/* Footer */
 footer {
-    background: #333;
+    background: linear-gradient(90deg, #312e81, #581c87, #831843);
     color: white;
-    padding: 20px;
+    padding: 25px;
 }
 
+/* Dark Theme */
+body.dark {
+    background: linear-gradient(135deg, #111827, #312e81);
+    color: white;
+}
+
+.dark #about,
+.dark #skills,
+.dark #github {
+    background: linear-gradient(135deg, #1f2937, #312e81);
+    color: white;
+}
+
+.dark .card {
+    background: linear-gradient(135deg, #374151, #4338ca);
+    color: white;
+}
+
+.dark .card h3 {
+    color: #ddd6fe;
+}
 
 /* Mobile Design */
 @media (max-width: 600px) {
     nav a {
         display: inline-block;
-        margin: 5px;
+        margin: 6px;
     }
 
-    h1 {
-        font-size: 28px;
+    #home h1 {
+        font-size: 30px;
     }
 
     .card {
         width: 100%;
+        max-width: 280px;
     }
 }
