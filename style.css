@@ -116,3 +116,17 @@ footer {
         width: 80%;
     }
 }
+
+/* Horizontal line below the complete header */
+header {
+    position: relative;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(
+        90deg,
+        #06b6d4,
+        #a855f7,
+        #ec4899,
+        #fde047
+    ) 1;
+}
+
