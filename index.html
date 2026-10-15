@@ -1,791 +1,250 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Web Designing Experiment using HTML, CSS, JavaScript and GitHub.">
 
-    <title>Web Designing</title>
+    <title>Web Designing | Payal Makani</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<!-- =========================================
-     ANIMATED BACKGROUND
-========================================== -->
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">🚀 Payal Makani</a>
 
-<div class="background">
+            <button class="menu-btn" id="menuBtn"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">☰</button>
 
-    <div class="blob one"></div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#journey">Journey</a>
+                <a href="#skills">Skills</a>
+                <a href="#faq">FAQ</a>
+                <button id="themeBtn" class="theme-btn"
+                        aria-label="Toggle dark mode">🌙</button>
+            </div>
+        </nav>
+    </header>
 
-    <div class="blob two"></div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <p class="tag">MY WEB DESIGNING PROJECT</p>
+            <h1>Build. Learn. Create.</h1>
 
-    <div class="blob three"></div>
+            <p class="hero-text">
+                Learning modern web development with HTML, CSS,
+                JavaScript, Git and GitHub.
+            </p>
 
-</div>
+            <a href="#about" class="btn">Explore Project →</a>
+        </section>
 
+        <!-- About Section -->
+        <section class="section" id="about">
+            <h2>About This Project</h2>
+            <p class="subtitle">Learning modern web development through practice.</p>
 
-<!-- =========================================
-     HERO SECTION
-========================================== -->
+            <p class="description">
+                This project demonstrates how to create a responsive website
+                using HTML5, CSS3 and JavaScript. It also explains how GitHub
+                helps us manage code, create branches, merge changes and
+                publish websites using GitHub Pages.
+            </p>
 
-<header id="home">
+            <div class="stats">
+                <div class="stat">
+                    <h3>3</h3>
+                    <p>Core Technologies</p>
+                </div>
 
-    <div class="hero-content">
+                <div class="stat">
+                    <h3>4</h3>
+                    <p>Git Concepts</p>
+                </div>
 
-        <div class="badge">
-            🚀 Payal Makani
-        </div>
+                <div class="stat">
+                    <h3>5+</h3>
+                    <p>Website Features</p>
+                </div>
+            </div>
+        </section>
 
-        <h1>
-            Build.
-            <span>Learn.</span>
-            Create.
-        </h1>
+        <!-- Features Section -->
+        <section class="section alternate" id="features">
+            <h2>What I Learned</h2>
+            <p class="subtitle">Important concepts covered in this experiment.</p>
 
-        <p>
-            An interactive web designing project demonstrating
-            HTML, CSS, JavaScript, Git, GitHub, Branches,
-            Merging and GitHub Pages.
-        </p>
+            <div class="cards">
+                <article class="card">
+                    <span class="emoji">📁</span>
+                    <h3>GitHub Repository</h3>
+                    <p>Store, manage and share project files online.</p>
+                </article>
 
-        <div class="hero-buttons">
+                <article class="card">
+                    <span class="emoji">🌿</span>
+                    <h3>Branches</h3>
+                    <p>Develop new features independently using branches.</p>
+                </article>
 
-            <a href="#about" class="button primary-btn">
-                Explore Project →
+                <article class="card">
+                    <span class="emoji">🔀</span>
+                    <h3>Merge Changes</h3>
+                    <p>Combine changes from a feature branch into the main branch.</p>
+                </article>
+
+                <article class="card">
+                    <span class="emoji">🌐</span>
+                    <h3>GitHub Pages</h3>
+                    <p>Publish a static website and make it accessible online.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="section" id="journey">
+            <h2>My GitHub Journey</h2>
+            <p class="subtitle">From writing code to publishing a website.</p>
+
+            <div class="timeline">
+                <div class="step">
+                    <span>01</span>
+                    <div>
+                        <h3>Create Repository</h3>
+                        <p>Create a repository for the web designing experiment.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span>02</span>
+                    <div>
+                        <h3>Create Branch</h3>
+                        <p>Create a separate branch to develop new features.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span>03</span>
+                    <div>
+                        <h3>Commit Changes</h3>
+                        <p>Save modifications with meaningful commit messages.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span>04</span>
+                    <div>
+                        <h3>Merge Changes</h3>
+                        <p>Combine the completed feature branch with the main branch.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span>05</span>
+                    <div>
+                        <h3>Deploy Website</h3>
+                        <p>Publish the final website using GitHub Pages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section alternate" id="skills">
+            <h2>Technical Skills</h2>
+            <p class="subtitle">Technologies and concepts used in this project.</p>
+
+            <div class="skills">
+                <div class="skill">
+                    <div><span>HTML5</span><span>90%</span></div>
+                    <div class="progress"><span style="width:90%"></span></div>
+                </div>
+
+                <div class="skill">
+                    <div><span>CSS3</span><span>85%</span></div>
+                    <div class="progress"><span style="width:85%"></span></div>
+                </div>
+
+                <div class="skill">
+                    <div><span>JavaScript</span><span>75%</span></div>
+                    <div class="progress"><span style="width:75%"></span></div>
+                </div>
+
+                <div class="skill">
+                    <div><span>Git & GitHub</span><span>80%</span></div>
+                    <div class="progress"><span style="width:80%"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Section -->
+        <section class="github-section">
+            <h2>🐙 Hosted with GitHub Pages</h2>
+            <p>
+                This project demonstrates how a website can be created
+                and published online using GitHub.
+            </p>
+
+            <a class="btn" href="https://pages.github.com/"
+               target="_blank" rel="noopener noreferrer">
+                Learn About GitHub Pages →
             </a>
-
-            <a href="#features" class="button secondary-btn">
-                View Features
-            </a>
-
-        </div>
-
-    </div>
-
-</header>
-
-
-<!-- =========================================
-     NAVIGATION
-========================================== -->
-
-<nav>
-
-    <a href="#home">Home</a>
-
-    <a href="#about">About</a>
-
-    <a href="#features">Features</a>
-
-    <a href="#journey">Journey</a>
-
-    <a href="#skills">Skills</a>
-
-    <a href="#github">GitHub</a>
-
-    <a href="#faq">FAQ</a>
-
-    <button
-        class="theme-btn"
-        id="themeBtn"
-        title="Toggle dark mode">
-
-        🌙
-
-    </button>
-
-</nav>
-
-
-<!-- =========================================
-     ABOUT SECTION
-========================================== -->
-
-<section id="about" class="reveal">
-
-    <div class="section-heading">
-
-        <small>
-            Introduction
-        </small>
-
-        <h2>
-            About This Project
-        </h2>
-
-        <p>
-            Learning modern web development through practice.
-        </p>
-
-    </div>
-
-
-    <div class="intro glass">
-
-        <p>
-            This website demonstrates how a modern
-            responsive website can be designed using HTML5,
-            CSS3 and JavaScript while using GitHub for version
-            control, branches, merging and deployment through
-            GitHub Pages.
-        </p>
-
-    </div>
-
-
-    <!-- Statistics -->
-
-    <div class="stats">
-
-        <div class="stat glass">
-
-            <h3 data-target="3">
-                0
-            </h3>
-
-            <p>
-                Core Technologies
-            </p>
-
-        </div>
-
-
-        <div class="stat glass">
-
-            <h3 data-target="4">
-                0
-            </h3>
-
-            <p>
-                Git Concepts
-            </p>
-
-        </div>
-
-
-        <div class="stat glass">
-
-            <h3 data-target="10">
-                0
-            </h3>
-
-            <p>
-                Interactive Features
-            </p>
-
-        </div>
-
-
-        <div class="stat glass">
-
-            <h3 data-target="100">
-                0
-            </h3>
-
-            <p>
-                % Responsive
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================
-     FEATURES SECTION
-========================================== -->
-
-<section id="features" class="reveal">
-
-    <div class="section-heading">
-
-        <small>
-            Learning Outcomes
-        </small>
-
-        <h2>
-            What I Learned
-        </h2>
-
-        <p>
-            Important concepts covered in this experiment.
-        </p>
-
-    </div>
-
-
-    <div class="cards">
-
-
-        <div class="card glass">
-
-            <div class="icon">
-                📁
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <p class="subtitle">Quick answers about this project.</p>
+
+            <div class="faq-list">
+                <details>
+                    <summary>What is GitHub?</summary>
+                    <p>GitHub is a platform for storing code, collaborating and managing project versions.</p>
+                </details>
+
+                <details>
+                    <summary>What is a Git branch?</summary>
+                    <p>A branch lets developers work on changes independently.</p>
+                </details>
+
+                <details>
+                    <summary>What is GitHub Pages?</summary>
+                    <p>GitHub Pages hosts static websites directly from a repository.</p>
+                </details>
+
+                <details>
+                    <summary>Which technologies are used?</summary>
+                    <p>This project uses HTML5, CSS3 and JavaScript.</p>
+                </details>
+
+                <details>
+                    <summary>Is the website responsive?</summary>
+                    <p>Yes, the layout adapts to mobile phones, tablets and computers.</p>
+                </details>
             </div>
-
-            <h3>
-                GitHub Repository
-            </h3>
-
-            <p>
-                Created a GitHub repository to store,
-                manage and share project files.
-            </p>
-
-        </div>
-
-
-        <div class="card glass">
-
-            <div class="icon">
-                🌿
-            </div>
-
-            <h3>
-                Branches
-            </h3>
-
-            <p>
-                Used branches to develop different
-                features independently.
-            </p>
-
-        </div>
-
-
-        <div class="card glass">
-
-            <div class="icon">
-                🔀
-            </div>
-
-            <h3>
-                Merge Changes
-            </h3>
-
-            <p>
-                Combined feature changes into the
-                main branch using Git.
-            </p>
-
-        </div>
-
-
-        <div class="card glass">
-
-            <div class="icon">
-                🌐
-            </div>
-
-            <h3>
-                GitHub Pages
-            </h3>
-
-            <p>
-                Published the static website online
-                using GitHub Pages.
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- =========================================
-     GITHUB JOURNEY
-========================================== -->
-
-<section id="journey" class="reveal">
-
-    <div class="section-heading">
-
-        <small>
-            Development Process
-        </small>
-
-        <h2>
-            My GitHub Journey
-        </h2>
-
-        <p>
-            From writing code to publishing a website.
-        </p>
-
-    </div>
-
-
-    <div class="timeline">
-
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content glass">
-
-                <h3>
-                    01. Create Repository
-                </h3>
-
-                <p>
-                    A new GitHub repository was created
-                    for the Web Designing experiment.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content glass">
-
-                <h3>
-                    02. Create Branch
-                </h3>
-
-                <p>
-                    A separate feature branch was created
-                    to develop new website features.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content glass">
-
-                <h3>
-                    03. Commit Changes
-                </h3>
-
-                <p>
-                    Website modifications were saved using
-                    meaningful Git commits.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content glass">
-
-                <h3>
-                    04. Merge Changes
-                </h3>
-
-                <p>
-                    Feature changes were merged into
-                    the main branch.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content glass">
-
-                <h3>
-                    05. Deploy Website
-                </h3>
-
-                <p>
-                    The final website was published
-                    using GitHub Pages.
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- =========================================
-     SKILLS SECTION
-========================================== -->
-
-<section id="skills" class="reveal">
-
-    <div class="section-heading">
-
-        <small>
-            Technical Skills
-        </small>
-
-        <h2>
-            What I Can Do
-        </h2>
-
-        <p>
-            Technologies and concepts used in this project.
-        </p>
-
-    </div>
-
-
-    <div class="skills glass">
-
-
-        <div class="skill">
-
-            <div class="skill-title">
-
-                <span>
-                    HTML5
-                </span>
-
-                <span>
-                    95%
-                </span>
-
-            </div>
-
-            <div class="progress">
-
-                <span data-width="95%"></span>
-
-            </div>
-
-        </div>
-
-
-        <div class="skill">
-
-            <div class="skill-title">
-
-                <span>
-                    CSS3
-                </span>
-
-                <span>
-                    90%
-                </span>
-
-            </div>
-
-            <div class="progress">
-
-                <span data-width="90%"></span>
-
-            </div>
-
-        </div>
-
-
-        <div class="skill">
-
-            <div class="skill-title">
-
-                <span>
-                    JavaScript
-                </span>
-
-                <span>
-                    80%
-                </span>
-
-            </div>
-
-            <div class="progress">
-
-                <span data-width="80%"></span>
-
-            </div>
-
-        </div>
-
-
-        <div class="skill">
-
-            <div class="skill-title">
-
-                <span>
-                    Git & GitHub
-                </span>
-
-                <span>
-                    85%
-                </span>
-
-            </div>
-
-            <div class="progress">
-
-                <span data-width="85%"></span>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- =========================================
-     GITHUB SECTION
-========================================== -->
-
-<section id="github" class="reveal">
-
-    <div class="github">
-
-        <h2>
-            🐙 Hosted with GitHub Pages
-        </h2>
-
-        <p>
-            This project demonstrates how a responsive
-            static website can be created with HTML,
-            CSS and JavaScript and published online
-            using GitHub Pages.
-        </p>
-
-        <br>
-
-        <a
-            href="https://pages.github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button primary-btn">
-
-            Learn About GitHub Pages
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================
-     FAQ SECTION
-========================================== -->
-
-<section id="faq" class="reveal">
-
-    <div class="section-heading">
-
-        <small>
-            Questions
-        </small>
-
-        <h2>
-            Frequently Asked Questions
-        </h2>
-
-        <p>
-            Quick answers about the project.
-        </p>
-
-    </div>
-
-
-    <div class="faq">
-
-
-        <div class="faq-item glass">
-
-            <button class="faq-question">
-
-                <span>
-                    What is GitHub?
-                </span>
-
-                <span>
-                    +
-                </span>
-
-            </button>
-
-            <div class="faq-answer">
-
-                GitHub is a platform used for hosting
-                source code, collaborating on projects
-                and managing versions using Git.
-
-            </div>
-
-        </div>
-
-
-        <div class="faq-item glass">
-
-            <button class="faq-question">
-
-                <span>
-                    What is a Git branch?
-                </span>
-
-                <span>
-                    +
-                </span>
-
-            </button>
-
-            <div class="faq-answer">
-
-                A branch allows developers to work on
-                a feature or change independently without
-                directly modifying the main branch.
-
-            </div>
-
-        </div>
-
-
-        <div class="faq-item glass">
-
-            <button class="faq-question">
-
-                <span>
-                    What is GitHub Pages?
-                </span>
-
-                <span>
-                    +
-                </span>
-
-            </button>
-
-            <div class="faq-answer">
-
-                GitHub Pages is a hosting service that
-                allows static websites to be published
-                directly from a GitHub repository.
-
-            </div>
-
-        </div>
-
-
-        <div class="faq-item glass">
-
-            <button class="faq-question">
-
-                <span>
-                    Which technologies are used?
-                </span>
-
-                <span>
-                    +
-                </span>
-
-            </button>
-
-            <div class="faq-answer">
-
-                This project uses HTML5 for structure,
-                CSS3 for styling and JavaScript for
-                interactive functionality.
-
-            </div>
-
-        </div>
-
-
-        <div class="faq-item glass">
-
-            <button class="faq-question">
-
-                <span>
-                    Is this website responsive?
-                </span>
-
-                <span>
-                    +
-                </span>
-
-            </button>
-
-            <div class="faq-answer">
-
-                Yes. The website automatically adapts
-                to desktop, tablet and mobile screen sizes.
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- =========================================
-     FOOTER
-========================================== -->
-
-<footer>
-
-    <h3>
-        Web Designing
-    </h3>
-
-    <div class="footer-line"></div>
-
-    <p>
-        Created using HTML5 • CSS3 • JavaScript
-    </p>
-
-    <p>
-        GitHub • Branches • Merge • GitHub Pages
-    </p>
-
-    <p>
-        © 2026 Web Designing by Payal
-    </p>
-
-</footer>
-
-
-<!-- =========================================
-     SCROLL TO TOP BUTTON
-========================================== -->
-
-<button
-    id="topBtn"
-    title="Back to top">
-
-    ↑
-
-</button>
-
-
-<script src="script.js"></script>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Web Designing</h3>
+        <p>Created using HTML5 • CSS3 • JavaScript</p>
+        <p>GitHub • Branches • Merge • GitHub Pages</p>
+        <p>© 2026 Web Designing by Payal</p>
+
+        <a href="#home" class="top-btn" aria-label="Back to top">↑</a>
+    </footer>
 
 </body>
-
-    </html>
+</html>
