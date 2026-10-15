@@ -1,80 +1,112 @@
 
+/* Basic Design */
 body {
-    font-family: Arial;
     margin: 0;
+    font-family: Arial, sans-serif;
     text-align: center;
-    background: linear-gradient(135deg, #dbeafe, #f5d0fe, #fce7f3);
     color: #333;
+    background: linear-gradient(135deg, #e0e7ff, #fce7f3, #cffafe);
 }
 
-header, footer {
+/* Header */
+header {
     background: linear-gradient(90deg, #4338ca, #9333ea, #ec4899);
     color: white;
     padding: 20px;
 }
 
 nav {
-    margin: 15px;
+    margin-top: 15px;
 }
 
 nav a {
     color: white;
-    margin: 8px;
     text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
 }
 
+/* Home */
+#home {
+    padding: 70px 20px;
+    color: white;
+    background: linear-gradient(135deg, #4f46e5, #a855f7, #ec4899);
+}
+
+#home h1 {
+    font-size: 40px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #06b6d4, #4f46e5);
+}
+
+/* All Sections */
 section {
     padding: 40px 20px;
 }
 
-#home {
-    background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
-    color: white;
-    padding: 60px 20px;
-}
-
-.btn, button {
-    background: linear-gradient(90deg, #06b6d4, #6366f1);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 20px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.card {
-    background: linear-gradient(135deg, white, #ddd6fe);
-    padding: 20px;
-    width: 200px;
-    border-radius: 15px;
-}
-
 #about {
-    background: linear-gradient(135deg, #fff, #dbeafe);
+    background: linear-gradient(135deg, #ffffff, #dbeafe);
 }
 
 #skills {
-    background: linear-gradient(135deg, #e9d5ff, #fce7f3);
+    background: linear-gradient(135deg, #ddd6fe, #fce7f3);
 }
 
 #github {
     background: linear-gradient(135deg, #cffafe, #ddd6fe);
 }
 
-.dark {
-    background: #222;
-    color: white;
+/* Cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
+.card {
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff, #e9d5ff);
+    box-shadow: 0 4px 12px #00000015;
+}
+
+.card h3 {
+    color: #6d28d9;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    color: white;
+    background: linear-gradient(90deg, #312e81, #7e22ce, #9d174d);
+}
+
+/* Mobile Design */
 @media (max-width: 600px) {
+    #home h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
@@ -82,9 +114,5 @@ section {
 
     .card {
         width: 80%;
-    }
-
-    nav a {
-        display: inline-block;
     }
 }
